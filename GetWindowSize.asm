@@ -15,7 +15,6 @@ main ENDP
 GetWindowSize PROC
 
 	; Получаем в eax дескриптор стандартного устройства вывода.
-	; Результат заносится в eax.
 	INVOKE GetStdHandle, STD_OUTPUT_HANDLE
 
 	; Получаем информацию о текущем состоянии окна терминала.
